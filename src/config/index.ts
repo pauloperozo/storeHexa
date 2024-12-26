@@ -15,4 +15,12 @@ export default {
     database: env.DBDATABASE,
     synchronize: true,
   },
+  mail: {
+    host: env.MAILHOST,
+    port: Number(env.MAILPORT) || 587,
+    secure: env.MAILSECUERE,
+    user: env.MAILUSER,
+    password: env.MAILPASSWORD,
+    from: env.MAILFROM,
+  },
 };
