@@ -1,7 +1,7 @@
-import { Customer } from './customer.entity';
+import { CustomerEntity } from './customer.entity';
 export interface CustomerRepository {
-  save(customer: Customer): Promise<void>;
-  findByEmail(email: string): Promise<Customer | null>;
-  findByCustomerId(customerId: string): Promise<Customer | null>;
-  update(customerId: string, customer: Customer): Promise<void>;
+  save(customer: CustomerEntity): Promise<void>;
+  findByEmail(email: string): Promise<CustomerEntity | null>;
+  findByCustomerId(customerId: string): Promise<CustomerEntity | null>;
+  update(customerId: string, customer: CustomerEntity): Promise<void>;
 }
