@@ -27,4 +27,4 @@ import { CustomerModel } from 'src/core/infrastructure/database/model/customer.m
   ],
   controllers: [SignUpController, SignInController, ForgotController],
 })
-export class ProductModule {}
+export class CustomerModule {}
