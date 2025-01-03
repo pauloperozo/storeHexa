@@ -46,11 +46,7 @@ export class CustomerRepositoryImpl implements CustomerRepository {
   }
 
   async update(customerId: string, customer: Customer): Promise<Customer> {
-    await this.model.update(customerId, {
-      email: customer.email,
-      otp: customer.otp,
-      updatedAt: new Date(),
-    });
+    await this.model.update(customerId, customer);
     return customer;
   }
 }
